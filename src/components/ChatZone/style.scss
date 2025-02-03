@@ -1,0 +1,13 @@
+.chatZone {
+    height: 100%;
+    background-color: #efeae2;
+    background-image: url('@assets/chatzone-back.png');
+    display: grid;
+    grid-template-rows: 1fr 3rem;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

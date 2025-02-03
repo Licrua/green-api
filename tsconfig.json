@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "react",
+    "module": "NodeNext",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*":       ["./src/*"],
+      "@assets/*":     ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@contexts/*":   ["./src/contexts/*"],
+      "@hooks/*":      ["./src/hooks/*"],
+      "@layouts/*":    ["./src/layouts/*"],
+      "@pages/*":      ["./src/pages/*"],
+      "@services/*":   ["./src/services/*"],
+      "@routes/*":   ["./src/routes/*"],
+      "@store/*":   ["./src/store/*"]
+    },
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+  },
+  "include": ["src/**/*", "src/custom.d.ts"]
+}

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('@assets/Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('@assets/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper::before {
+    z-index: 0;
+    position: fixed;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 127px;
+    background-color: #00a884;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+    width: 1px;
+    height: 1px;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #eae6df;
+    background-image: linear-gradient(180deg, #eae6df, #d1d7db);
+}
